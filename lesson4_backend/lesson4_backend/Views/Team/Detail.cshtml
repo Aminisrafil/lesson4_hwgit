@@ -1,0 +1,28 @@
+﻿
+@model Team
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<main id="main">
+    <div class="row d-flex justify-content-center">
+    <div class="col-lg-8 col-md-8 d-flex  align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="member">
+            <div class="member-img">
+                <img src="~/assets/img/team/@Model.Img" class="img-fluid" alt="">
+                <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="member-info">
+                <h4>@Model.FullName</h4>
+                <span>@Model.Position</span>
+            </div>
+        </div>
+     </div>
+    </div>
+</main>
+
